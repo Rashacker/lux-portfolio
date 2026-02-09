@@ -230,15 +230,50 @@ export default function Home() {
           <div>
             <h2>Reserve your private build slot</h2>
             <p>
-              We take on a limited number of launches each quarter. Request a
-              private consult to secure your date.
+              We take on a limited number of launches each quarter. Share a few
+              details and we will reply within 24 hours.
             </p>
+            <div className="contact-note">
+              Prefer email? hello@luxatelier.com
+            </div>
           </div>
-          <div>
-            <a className="btn btn-primary" href="mailto:hello@luxatelier.com">
+          <form
+            className="contact-form"
+            action="https://formspree.io/f/xaqdnadv"
+            method="POST"
+          >
+            <div className="field">
+              <label htmlFor="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div className="field">
+              <label htmlFor="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@company.com"
+                required
+              />
+            </div>
+            <div className="field">
+              <label htmlFor="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Brand or studio" />
+            </div>
+            <div className="field">
+              <label htmlFor="message">Project details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                placeholder="Tell us about your launch, timeline, and goals."
+                required
+              />
+            </div>
+            <button className="btn btn-primary" type="submit">
               Request a consult
-            </a>
-          </div>
+            </button>
+          </form>
         </section>
       </main>
 

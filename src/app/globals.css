@@ -416,6 +416,50 @@ details p {
   margin: 0;
 }
 
+.contact-note {
+  margin-top: 14px;
+  color: var(--smoke);
+  font-size: 0.95rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  color: var(--smoke);
+}
+
+.field input,
+.field textarea {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(227, 195, 139, 0.25);
+  background: rgba(15, 15, 18, 0.8);
+  color: var(--bone);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 0 2px rgba(227, 195, 139, 0.2);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
 .footer {
   padding: 30px 0 60px;
   color: rgba(185, 179, 168, 0.8);
